@@ -6,21 +6,24 @@ import { fadeIn } from "../../framerMotion/variants";
 const projects = [
   {
     name: "Wearhaus - Clothing Store",
-    tools: "Angular 19, Tailwind CSS, NodeJS, MongoDB",
+    feature: "For User & Admin",
+    tools: "Angular 19, Tailwind CSS, NgRx Store, NodeJS, MongoDB",
     align: "right",
     image: "./images/website-img-1.jpg",
     link: "https://wearhaus.vercel.app/",
   },
   {
     name: "Cinematix - Movie Booking App",
-    tools: "React, MUI, NodeJS, MongoDB",
+    feature: "For User & Admin",
+    tools: "React, MUI, Redux, NodeJS, MongoDB",
     align: "left",
     image: "./images/website-img-2.png",
     link: "https://cinematix-view.onrender.com/",
   },
   {
-    name: "Nived V. - Personal Website (LIVE)",
-    tools: "React, SASS",
+    name: "Nived V. - Personal Website",
+    feature: "Live Project",
+    tools: "React, Sass",
     align: "right",
     image: "./images/website-img-3.png",
     link: "https://yadukdev.github.io/NivedV/",
@@ -44,6 +47,7 @@ const ProjectsMain = () => {
             <SingleProject
               key={index}
               name={project.name}
+              feature={project.feature}
               tools={project.tools}
               link={project.link}
               align={project.align}

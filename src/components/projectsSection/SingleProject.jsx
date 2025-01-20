@@ -2,7 +2,7 @@ import { BsFillArrowUpRightCircleFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
-const SingleProject = ({ name, tools, align, image, link }) => {
+const SingleProject = ({ name, feature, tools, align, image, link }) => {
   return (
     <motion.div
       variants={fadeIn("top", 0)}
@@ -14,20 +14,19 @@ const SingleProject = ({ name, tools, align, image, link }) => {
       } justify-end sm:flex-col`}
     >
       <div>
-        <h2 className="md:text-3xl sm:text-2xl text-orange ">{name}</h2>
-        <h2
-          className={`text-xl font-thin text-white font-special sm:text-center ${
-            align === "left" ? "md:text-right" : "md:text-left"
-          }`}
-        >
+        <h2 className="md:text-3xl sm:text-2xl text-orange text-center">
+          {name}
+        </h2>
+        <h2 className="md:text-2xl sm:text-xl text-orange text-center">
+          {feature}
+        </h2>
+        <h2 className="text-xl font-thin text-white font-special text-center">
           {tools}
         </h2>
         <a
           href={link}
           target="blank"
-          className={`text-lg flex gap-2 items-center text-cyan hover:text-orange transition-all duration-500 cursor-pointer sm:justify-self-center ${
-            align === "left" ? "md:justify-self-end" : "md:justify-self-start"
-          }`}
+          className="mt-3 text-xl flex gap-2 items-center text-cyan hover:text-orange transition-all duration-500 cursor-pointer justify-self-center"
         >
           View <BsFillArrowUpRightCircleFill />
         </a>

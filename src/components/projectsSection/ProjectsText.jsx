@@ -12,6 +12,7 @@ const ProjectsText = () => {
         >
           github
         </a>
+        .
       </p>
     </div>
   );
