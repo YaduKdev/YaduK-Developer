@@ -7,7 +7,7 @@ const projects = [
   {
     name: "Wearhaus - Clothing Store",
     feature: "For User & Admin",
-    tools: "Angular 19, Tailwind CSS, NgRx Store, NodeJS, MongoDB",
+    tools: "Angular 19, Tailwind CSS, NgRx Store, NodeJS, MongoDB, Razorpay",
     align: "right",
     image: "./images/website-img-1.jpg",
     link: "https://wearhaus.vercel.app/",
@@ -15,7 +15,7 @@ const projects = [
   {
     name: "Cinematix - Movie Booking App",
     feature: "For User & Admin",
-    tools: "React, MUI, Redux, NodeJS, MongoDB",
+    tools: "React, MUI, Redux, NodeJS, MongoDB, Stripe Payments",
     align: "left",
     image: "./images/website-img-2.png",
     link: "https://cinematix-view.onrender.com/",
