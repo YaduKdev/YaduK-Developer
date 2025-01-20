@@ -33,7 +33,9 @@ const SingleProject = ({ name, tools, align, image, link }) => {
         </a>
       </div>
       <div className="max-h-[220px] max-w-[400px] rounded-xl overflow-hidden hover:scale-110 transform transition-all duration-500 ralative border border-orange">
-        <img src={image} alt="website image" className="w-full h-full" />
+        <a href={link} target="blank">
+          <img src={image} alt="website image" className="w-full h-full" />
+        </a>
       </div>
     </motion.div>
   );
